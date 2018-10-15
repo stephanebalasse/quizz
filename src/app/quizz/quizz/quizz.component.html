@@ -1,0 +1,22 @@
+<app-header class="header"
+            [questionNumber]="questionNumber"
+            [question]="qcms[questionNumber].question"
+></app-header>
+
+<app-players [players]="players" class="containerPlayer"></app-players>
+
+<button mat-button
+        class="next"
+        (click)="next()"
+>{{buttonText}}</button>
+
+<img class="images"
+     [src]="qcms[questionNumber].resource"
+     alt="resource"
+>
+
+<app-choices
+  [answers]="qcms[questionNumber].answers"
+  [height]="250"
+></app-choices>
+

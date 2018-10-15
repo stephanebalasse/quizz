@@ -1,0 +1,9 @@
+<div class="containerPlayer">
+  <div class="playerRow" *ngFor="let player of players">
+    <div class="player">
+      {{player.login}}
+    </div>
+    <mat-icon class="playerIcon" [hidden]="player.login === 'Gwen'">done</mat-icon>
+  </div>
+</div>
+

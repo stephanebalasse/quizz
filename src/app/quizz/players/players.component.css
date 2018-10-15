@@ -1,0 +1,26 @@
+.containerPlayer{
+  display: flex;
+  flex-direction: column;
+}
+
+.player{
+  padding-right: 10px;
+}
+.playerRow{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  height: 30px;
+  padding: 0 15px;
+  line-height: 30px;
+  vertical-align: middle;
+  border-radius: 15px;
+  margin: 5px 0 5px;
+}
+.playerIcon{
+  line-height: 30px;
+  height: 30px;
+  font-weight: bold;
+  color: lawngreen;
+  display: block;
+}
